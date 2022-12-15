@@ -1,5 +1,5 @@
-# Junk-File-Generator
+# Junk File Generator
+A Powershell script for generating junk files to test drive capacity.
 
-I wanted to share with you a program that I recently developed - a Junk File Generator. This program is designed to create random, meaningless files of varying sizes to test the capacity and performance of our data storage systems.
-
-Using this tool, we can easily generate large volumes of junk data to simulate real-world scenarios and ensure that our systems are able to handle the demands of our users. We can also use it to identify any potential bottlenecks or weaknesses in our storage infrastructure.
+## Usage
+To use the script, simply run it in Powershell and it will begin creating junk files in a folder called "junk" in the same directory as the script. The script will continue running until the drive becomes full, at which point it will output a message and terminate.
