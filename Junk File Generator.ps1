@@ -1,4 +1,3 @@
-$ErrorActionPreference = 'SilentlyContinue'
 Write-Output "Welcome to the Junk File Generator!"
 sleep 3
 $ErrorActionPreference = 'SilentlyContinue'
