@@ -1,4 +1,4 @@
-
+$ErrorActionPreference = 'SilentlyContinue'
 Write-Output "Welcome to the Junk File Generator!"
 sleep 3
 $ErrorActionPreference = 'SilentlyContinue'
@@ -12,7 +12,8 @@ while($true) {
         [System.IO.File]::WriteAllBytes($filePath, $junkData)
         Write-Output "Created junk file: $filePath"
     } catch {
-        Write-Output "Drive Full. Test done."
-        break
+		Write-Host "Drive Full. Test done."
+        $null = Read-Host
+		
     }
 }
